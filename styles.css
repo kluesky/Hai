@@ -1,10 +1,10 @@
 :root {
-  --primary: #ff4f93;
-  --secondary: #d77fa1;
-  --dark-pink: #5f0036;
-  --light-pink: #ffe9f3;
-  --bubble-pink: #ffe4f2;
-  --shadow-pink: #ffc0cb;
+  --primary: #87CEEB; /* Sky Blue */
+  --secondary: #B0C4DE; /* Light Steel Blue */
+  --dark: #708090; /* Slate Gray */
+  --light: #FFFFFF; /* White */
+  --bubble: #E6F2FF; /* Light Sky Blue */
+  --shadow: #B0C4DE; /* Light Steel Blue */
 }
 
 * {
@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(135deg, #ffe9f3, #fce4ec, #fff0f6);
+  background: linear-gradient(135deg, #E6F7FF, #F0F8FF, #F5F9FF);
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
@@ -47,8 +47,8 @@ h1 {
   color: var(--primary);
   font-family: 'Satisfy', cursive;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px #ffa8c9;
-  background: linear-gradient(to right, #ff4f93, #ff92b5);
+  text-shadow: 0 0 10px #ADD8E6;
+  background: linear-gradient(to right, #87CEEB, #B0E0E6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow 8s ease infinite;
@@ -63,7 +63,7 @@ h1 {
 
 #typing {
   font-size: 1.3rem;
-  color: var(--dark-pink);
+  color: var(--dark);
   line-height: 1.7;
   max-width: 800px;
   margin: 0 auto 30px;
@@ -106,15 +106,15 @@ audio {
   backdrop-filter: blur(5px);
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 5px 15px rgba(255, 192, 203, 0.4);
+  box-shadow: 0 5px 15px rgba(176, 196, 222, 0.4);
 }
 
 .bubble {
   padding: 12px 16px;
   margin: 10px 0;
-  background: var(--bubble-pink);
+  background: var(--bubble);
   border-radius: 18px;
-  box-shadow: 0 2px 5px var(--shadow-pink);
+  box-shadow: 0 2px 5px var(--shadow);
   animation: fadeIn 0.5s ease, float 3s ease-in-out infinite;
   position: relative;
   transition: all 0.3s ease;
@@ -123,7 +123,7 @@ audio {
 
 .bubble:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  box-shadow: 0 5px 15px rgba(135, 206, 235, 0.4);
 }
 
 .bubble:nth-child(odd) {
@@ -150,7 +150,7 @@ audio {
   max-width: 700px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(255, 192, 203, 0.3);
+  box-shadow: 0 10px 30px rgba(176, 196, 222, 0.3);
   text-align: left;
   animation: fadeInUp 1.2s ease;
   z-index: 2;
@@ -162,7 +162,7 @@ audio {
 
 .letter-section:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+  box-shadow: 0 15px 35px rgba(135, 206, 235, 0.3);
 }
 
 .letter-section h2 {
@@ -171,7 +171,7 @@ audio {
   color: var(--primary);
   font-size: 2.2rem;
   margin-bottom: 30px;
-  text-shadow: 0 0 5px #ffbcd5;
+  text-shadow: 0 0 5px #ADD8E6;
   position: relative;
   display: inline-block;
   left: 50%;
@@ -194,7 +194,7 @@ audio {
   transform: translateY(20px);
   transition: all 0.6s ease;
   font-size: 1.1rem;
-  color: var(--dark-pink);
+  color: var(--dark);
   margin-bottom: 20px;
   line-height: 1.8;
   padding-left: 15px;
@@ -217,11 +217,11 @@ audio {
   padding: 15px 35px;
   font-size: 1.1rem;
   font-weight: bold;
-  background: linear-gradient(45deg, #6a5acd, #9370db);
+  background: linear-gradient(45deg, #4682B4, #87CEEB);
   color: white;
   border: none;
   border-radius: 30px;
-  box-shadow: 0 5px 20px rgba(205, 191, 255, 0.6);
+  box-shadow: 0 5px 20px rgba(70, 130, 180, 0.6);
   cursor: pointer;
   transition: all 0.3s ease;
   max-width: 90%;
@@ -245,7 +245,7 @@ audio {
 
 #secret-btn:hover {
   transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 8px 25px rgba(170, 140, 255, 0.7);
+  box-shadow: 0 8px 25px rgba(70, 130, 180, 0.7);
 }
 
 #secret-btn:hover::before {
@@ -290,19 +290,19 @@ audio {
 .confetti-btn {
   margin-top: 20px;
   padding: 10px 20px;
-  background: linear-gradient(45deg, #ff92b5, #ff4f93);
+  background: linear-gradient(45deg, #B0E0E6, #87CEEB);
   color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: bold;
-  box-shadow: 0 3px 10px rgba(255, 105, 180, 0.4);
+  box-shadow: 0 3px 10px rgba(135, 206, 235, 0.4);
 }
 
 .confetti-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.6);
+  box-shadow: 0 5px 15px rgba(135, 206, 235, 0.6);
 }
 
 .cake-container {
@@ -329,7 +329,7 @@ audio {
   bottom: 0;
   width: 150px;
   height: 60px;
-  background: linear-gradient(to bottom, #f8c9d9, #f5a6c2);
+  background: linear-gradient(to bottom, #D4E6F1, #B0C4DE);
   border-radius: 10px 10px 30px 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -340,7 +340,7 @@ audio {
   left: 25px;
   width: 100px;
   height: 40px;
-  background: linear-gradient(to bottom, #ffd6e7, #ffb6d9);
+  background: linear-gradient(to bottom, #E6F2FF, #D4E6F1);
   border-radius: 10px 10px 0 0;
 }
 
@@ -350,7 +350,7 @@ audio {
   left: 70px;
   width: 10px;
   height: 30px;
-  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  background: linear-gradient(to bottom, #B0C4DE, #D4E6F1);
   border-radius: 5px;
   z-index: 2;
 }
@@ -361,9 +361,9 @@ audio {
   left: 72px;
   width: 6px;
   height: 15px;
-  background: linear-gradient(to bottom, #fffacd, #ffd700);
+  background: linear-gradient(to bottom, #FFFACD, #87CEEB);
   border-radius: 50% 50% 20% 20%;
-  box-shadow: 0 0 10px #ffd700, 0 0 20px #ffa500;
+  box-shadow: 0 0 10px #87CEEB, 0 0 20px #4682B4;
   animation: flicker 0.5s infinite alternate;
   z-index: 3;
 }
@@ -384,19 +384,19 @@ audio {
 .decoration:nth-child(1) {
   bottom: 20px;
   left: 20px;
-  background: #ff92b5;
+  background: #B0E0E6;
 }
 
 .decoration:nth-child(2) {
   bottom: 30px;
   right: 25px;
-  background: #d77fa1;
+  background: #B0C4DE;
 }
 
 .decoration:nth-child(3) {
   bottom: 15px;
   left: 70px;
-  background: #ff4f93;
+  background: #87CEEB;
 }
 
 .progress-container {
@@ -412,7 +412,7 @@ audio {
 .progress-bar {
   height: 20px;
   border-radius: 8px;
-  background: linear-gradient(to right, #ff92b5, #ff4f93);
+  background: linear-gradient(to right, #B0E0E6, #87CEEB);
   width: 0;
   transition: width 1s ease;
   position: relative;
