@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎂 Otanjoubi Omedetou, Mutia!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="floating-hearts" id="floating-hearts"></div>
+  
+  <div class="container">
+    <h1 class="animate__animated animate__fadeInDown">🎀 Otanjoubi Omedetou, Mutia! 🎂</h1>
+    
+    <div class="cake-container" id="cake">
+      <div class="cake">
+        <div class="cake-bottom"></div>
+        <div class="cake-top"></div>
+        <div class="candle"></div>
+        <div class="flame"></div>
+        <div class="decoration"></div>
+        <div class="decoration"></div>
+        <div class="decoration"></div>
+      </div>
+    </div>
+    
+    <div class="progress-container animate__animated animate__fadeIn">
+      <div class="progress-bar" id="progress-bar">
+        <span class="progress-text" id="progress-text">Loading happiness...</span>
+      </div>
+    </div>
+    
+    <p id="typing"></p>
+
+    <!-- Chatbox -->
+    <div id="chatbox" class="animate__animated animate__fadeInUp"></div>
+    
+    <button class="confetti-btn" id="confetti-btn">🎉 Throw Confetti!</button>
+
+    <!-- Tombol Rahasia -->
+    <button id="secret-btn" onclick="window.open('https://kyluesky.netlify.app/lagum.html', '_blank')">
+      Lagu Special
+    </button>
+
+    <!-- Musik -->
+    <audio id="bgm" autoplay loop>
+      <source src="https://files.catbox.moe/10eyhe.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+ <!-- Surat Digital -->
+<div class="letter-section">
+  <h2>📜 Surat dari Nishikigi Chisato 💌</h2>
+  <div class="letter">
+    <p>Hai, Mutia~ 🌙</p>
+    <p>Selamat ulang tahun. Semoga hari ini membawa ketenangan, tawa kecil, dan perasaan hangat yang sederhana tapi berarti.</p>
+    <p>Kamu telah melewati banyak hal, dan itu membuatmu tumbuh dengan cara yang begitu indah — seperti sakura yang tenang saat mekar. 🌸</p>
+    <p>Ingat, kamu tetap karakter utama dalam kisahmu sendiri. Jalanmu mungkin tidak selalu mudah, tapi setiap langkah tetap berarti.</p>
+    <p>Dan mungkin… ada seseorang yang diam-diam berharap agar kamu baik-baik saja, di manapun kamu berada. ✨</p>
+    <p>Dengan tulus,<br><b>— Nishikigi Chisato 🤍</b></p>
+  </div>
+</div>
+
+  <div id="watermark">© 2025 by Kyluesky</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
